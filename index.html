@@ -1,0 +1,338 @@
+<html>
+    <head>
+        <title>
+            Vacanza'18
+        </title>
+        <style>
+          /* Fully Responsive Site */  
+          /* All CSS Styles */
+            #home{
+                display: flex;
+                background-image: url("images/image.png");
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                background-repeat:no-repeat;
+                background-position: center;
+            }
+
+        
+            
+            .csi{
+                display:inline-flex;
+                position: fixed;
+                color: white;
+                font-size: 25px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin-left: 20px;
+                margin-top: 30px;
+            }
+
+            .optionbar img{
+                position: fixed;
+                border: 2px solid white;
+                background-color: white;
+                right:20px;
+                width: 25px;
+                height: 25px;
+                padding: 5px 5px;
+                top: 40px;
+                border-radius: 50%;  
+                cursor: pointer; 
+            }
+
+            .optionbar-content{
+                display: none;
+                position: absolute;
+                right: 50px;
+                top: 40px;
+                padding: 0px 30px;
+                z-index: 1;
+            }
+
+            .optionbar-content a{
+                color: white;
+                border: 2px solid black;
+                background-color: black;
+                border-radius: 10px;
+                padding: 12px 20px;
+                text-decoration: none;
+                display: inline-flex;
+                margin-right: 50px;
+                cursor: pointer;
+
+            }
+            .optionbar-content a:hover {background-color: rgb(14, 1, 1);
+                                        font-size: white;}
+            .optionbar:hover .optionbar-content {display: block;}
+            .optionbar:hover .img {background-color: #3e8e41;}
+
+            .vaclogos{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+              margin: auto;
+               justify-content:center;
+            }
+            #logo{ 
+                transition: all .2s ease-in-out;
+                
+            }
+
+            #logo:hover{
+            transform: rotate(720deg) scale(1.3);
+            }
+
+            #btn{
+                border: 0px;
+            }
+
+          #btn, #btn1, #btn2{
+              display: inline;
+              font-size: 20px;
+            margin-top: 40px;
+              text-align:center;
+              border: 2px white;
+              color: white;
+          }
+
+          #btn1,#btn2{
+              padding: 20px 20px;
+              font-size: 20px;
+              margin: 20px 20px;
+              border: 2px solid white;
+              border-radius: 30px;
+              cursor: pointer;
+          }
+
+          #btn1:hover{
+        font-size: 0;
+        border: 0px;
+        padding: 20px 20px;
+    }
+
+    #btn1:hover::before{
+        content:attr(data-hover);
+        border-radius: 30px;
+        border: 2px solid white;
+        font-size: 20px;
+        padding: 20px 20px;
+        
+        
+    }
+
+    #btn2:hover{
+        font-size: 0;
+        border: 0px;
+        padding: 20px 20px;
+    }
+
+    #btn2:hover::after{
+        content:attr(data-hover);
+        border-radius: 30px;
+        border: 2px solid white;
+        font-size: 20px;
+        padding: 20px 20px;
+    }
+
+
+    /*boxes section*/
+    #boxes{
+        background-color: rgba(175, 157, 202, 0.2);
+        display: flex;
+        z-index: -1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box1,.box2,.box3{
+        color: black;
+        background-color:rgba(241, 169, 12, 0.1);
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px 10px;
+        width: 90%;
+        height: 330px;
+        margin: 30px 0px;
+        box-shadow: 10px 10px 25px grey;  
+    }
+
+    .box1 img,.box3 img{
+        display:flex;
+        float:right;
+        width:330px;
+        height: 350px;
+        margin: -10px -10px;
+        clip-path:polygon(45% 0%,100% 0%,100% 100%,0% 100%);
+        
+    }
+    .box2 img{
+        display:flex;
+        float:left;
+        width:330px;
+        height: 350px;
+        margin: -10px -10px;
+        clip-path:polygon(0% 0%,45% 0%,100% 100%,0% 100%);
+    }
+
+
+    #content2 ,.box2 p, .box2 h5, .box2 .rules{
+        margin-left: 330px;
+        
+    }
+
+    .rules{
+        display:inline;
+        border: 1px solid rgb(4, 73, 4);
+        border-radius: 4px;
+        color: rgb(4, 73, 4);
+        cursor: pointer;
+        font-size: 15px;
+        padding: 15px 20px;
+        margin-left: 30px;
+        margin: 30px 30px;
+
+    }
+
+    .rules:hover{
+        background-color: rgb(4, 73, 4);
+        color: white;
+    }
+
+    .footerimage img{
+        display: block;
+        filter: contrast(1000%);
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        width: 100%;
+        animation: scaler 20s infinite;       
+    }
+    
+    .footerimage{
+        overflow: hidden;
+    }
+    @keyframes scaler 
+    {
+         0%{
+          transform: scale(1);
+          }
+         50% {
+           transform: scale(1.5);
+           }
+          100% {
+          transform: scale(1);
+           }
+      }
+
+
+    .copyright{
+        border: 2px solid black;
+        background-color: rgb(9, 1, 20);
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        color: white;
+    }
+
+    
+    .socialicon img{
+        width:20px;
+        height:20px;
+        margin-right:20px;
+        display:inline-flex;
+        align-items:center;
+        justify-content: center;
+        position:relative;
+        left: 45%;
+        border-radius: 50%;
+        border: 2px solid white;
+        top:77px;
+        z-index: 2;
+    }
+
+
+
+    }
+
+   
+
+        </style>
+    </head>
+
+    <body>
+        <section id = "home">
+            <div class = "csi">
+                CSI
+            </div>
+            <div class = "optionbar">
+                <img src = "images/option.png">
+                <div class="optionbar-content">
+                    <a href="#">HOME</a>
+                    <a href="#">ROUNDS</a>
+                    <a href="#">QUIZZES</a>
+                  </div>
+            </div>
+        <div class = "vaclogos">
+            <div id = "logo">
+               <img src ="images/logo.png" height = "240px"> <br>
+            </div>
+            <div id = "vac">
+                <img src = "images/vac.svg" height = "70px">
+            </div>
+            <div id = "btn">
+                <div id = "btn1" data-hover="REGISTER &#8594;">REGISTER</div>
+                <div id = "btn2" data-hover="START QUIZ &#8594;">START QUIZ</div>
+            </div>
+            </div>
+        </section>
+<section id = "boxes">
+            <div class = "box1">
+                <img src = "images/friends.jpg">
+                <h3>ROUND 1</h3><hr>
+                
+                <p> Round 1 consists of 4 domains from which participants have to select at least 2 domains and can<br>
+                     choose maximum of 4 domains for more points. The more domain you opt for, the more you score.
+                    <br>
+                    <h5>The four domains are:</h5>
+                    Vintage Photography &nbsp;  |   Leaf Collage &nbsp;  |   Origami Art  &nbsp; |   Face Mask Art</p><br>
+                <div class = "rules">RULES</div>
+                
+            </div>
+            <div class = "box2">
+                <img src = "images/quiz.jpg">
+                <h3>ROUND 2</h3><hr>
+                <p id = "content2">Test your knowledge just by animating some basic questios and gain points in Round 2<br>
+                    contains quiz questions based on popular T.V. Shows and sports.
+                    <br></p>
+                    <h5>The field are as follows:</h5>
+                   <p> Football  &nbsp; |   Stranger Things &nbsp;  |   Cricket &nbsp;  |   F.r.i.e.n.d.s</p><br>
+                    <div class = "rules">RULES</div>
+            </div>
+            <div class = "box3">
+                <img src = "images/magic (1).jpg">
+                <h3>ROUND 3</h3><hr>
+                <p> The final round consists of makin an interesting and astonishing magic trick video which might <br>
+                    force people to say "How did you do that!". The best and the most surprising video will be selected as<br>
+                    the Winner.</p><br>
+                    <div class = "rules">RULES</div>
+            </div>
+
+
+        </section>
+     <div class = "socialicon">
+        <a href = "https://www.instagram.com/csi_akgec/?hl=en" target="_blank"><img src = "images/insta_logo.jfif"></a>
+        <a href = "https://www.facebook.com/csi.akg/" target="_blank"><img src = "images/facebook_logo.png"></a>
+        <a href = "https://www.facebook.com/csi_akgec" target="_blank"><img src = "images/youtube_logo.png"></a>
+    </div>
+        <section id = "footer">
+            <div class = "footerimage">
+                <img src = "images/footer.png">
+        </div>
+            <div class = "copyright">
+                &copy; CSI AKGEC:2018
+            </div>
+        </section>
+    </body>
+</html>
